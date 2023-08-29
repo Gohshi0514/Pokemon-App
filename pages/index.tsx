@@ -39,10 +39,6 @@ export default function Home() {
         handleClick={handleClick}
       />
       {pokemonData.length > 0 ? <PokemonGrid pokemonData={pokemonData as pokemonType[]} /> : <p>Loading...</p>}
-
-      {loading && (
-        <h1 className="text-center font-bold text-2xl mt-5">Loading...</h1>
-      )}
     </>
   );
 }
